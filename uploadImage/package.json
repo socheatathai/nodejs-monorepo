@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node server.js",
+    "build": "echo \"No build step for uploadImage\"",
+    "test": "echo \"No tests yet for uploadImage\"",
+    "lint": "echo \"No lint configured for uploadImage\"",
+    "clean": "echo \"No clean step for uploadImage\""
   },
   "author": "",
   "license": "ISC",

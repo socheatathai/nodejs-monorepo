@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+build/
+dist/
+**/build/
+**/dist/
+
+# Coverage
+coverage/
+**/coverage/
+
+# Turborepo and task caches
+.turbo/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Agent/skill local artifacts
+.agents/
+.claude/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/settings.json

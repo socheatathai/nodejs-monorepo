@@ -5,7 +5,11 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.js",
+    "build": "echo \"No build step for crudImagesBackend\"",
+    "test": "echo \"No tests yet for crudImagesBackend\"",
+    "lint": "echo \"No lint configured for crudImagesBackend\"",
+    "clean": "echo \"No clean step for crudImagesBackend\""
   },
   "keywords": [],
   "author": "",

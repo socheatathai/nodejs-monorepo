@@ -1,0 +1,10 @@
+packages:
+  - "clientImage"
+  - "crudImagesBackend"
+  - "crudImagesFrontend"
+  - "design"
+  - "nodeJs"
+  - "nodejs-api"
+  - "nodejs_deploy"
+  - "serverImage"
+  - "uploadImage"

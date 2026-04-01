@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-doc-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.17.1",
+  "workspaces": [
+    "clientImage",
+    "crudImagesBackend",
+    "crudImagesFrontend",
+    "design",
+    "nodeJs",
+    "nodejs-api",
+    "nodejs_deploy",
+    "serverImage",
+    "uploadImage"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.6"
+  }
+}

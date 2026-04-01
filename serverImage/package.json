@@ -4,7 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node app.js",
+    "build": "echo \"No build step for serverImage\"",
+    "test": "echo \"No tests yet for serverImage\"",
+    "lint": "echo \"No lint configured for serverImage\"",
+    "clean": "echo \"No clean step for serverImage\""
   },
   "keywords": [],
   "author": "",
