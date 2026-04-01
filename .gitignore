@@ -23,6 +23,7 @@ coverage/
 # Agent/skill local artifacts
 .agents/
 .claude/
+skills-lock.json
 
 # Logs
 *.log
@@ -35,3 +36,5 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 .vscode/settings.json
+
+
