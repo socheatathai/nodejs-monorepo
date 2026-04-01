@@ -1,7 +1,21 @@
 import { Sequelize } from "sequelize";
+import dotenv from "dotenv";
 
- const db = new Sequelize('upload_db','root','',{
-    host:'localhost',
-    dialect:'mysql'
-})
+dotenv.config();
+
+const db = new Sequelize(
+    process.env.DB_NAME || 'upload_db',
+    process.env.DB_USER || 'root',
+    process.env.DB_PASS || '',
+    {
+        host: process.env.DB_HOST || 'localhost',
+        port: process.env.DB_PORT || 3306,
+        dialect: 'mysql',
+        logging: console.log,
+        dialectOptions: {
+            connectTimeout: 10000
+        }
+    }
+);
+
 export default db;

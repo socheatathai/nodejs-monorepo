@@ -59,10 +59,10 @@ importers:
 
   apps/crud-images-backend:
     dependencies:
-      '@nodejs-doc/config':
+      '@nodejs-monorepo/config':
         specifier: workspace:*
         version: link:../../packages/config
-      '@nodejs-doc/types':
+      '@nodejs-monorepo/types':
         specifier: workspace:*
         version: link:../../packages/types
       cors:
@@ -165,10 +165,10 @@ importers:
 
   apps/nodejs-api:
     dependencies:
-      '@nodejs-doc/config':
+      '@nodejs-monorepo/config':
         specifier: workspace:*
         version: link:../../packages/config
-      '@nodejs-doc/types':
+      '@nodejs-monorepo/types':
         specifier: workspace:*
         version: link:../../packages/types
       bcrypt:
@@ -211,10 +211,10 @@ importers:
 
   apps/nodejs-deploy:
     dependencies:
-      '@nodejs-doc/config':
+      '@nodejs-monorepo/config':
         specifier: workspace:*
         version: link:../../packages/config
-      '@nodejs-doc/types':
+      '@nodejs-monorepo/types':
         specifier: workspace:*
         version: link:../../packages/types
       bcrypt:
@@ -254,10 +254,10 @@ importers:
 
   apps/nodejs-legacy:
     dependencies:
-      '@nodejs-doc/config':
+      '@nodejs-monorepo/config':
         specifier: workspace:*
         version: link:../../packages/config
-      '@nodejs-doc/types':
+      '@nodejs-monorepo/types':
         specifier: workspace:*
         version: link:../../packages/types
       bcrypt:
@@ -297,10 +297,10 @@ importers:
 
   apps/server-image:
     dependencies:
-      '@nodejs-doc/config':
+      '@nodejs-monorepo/config':
         specifier: workspace:*
         version: link:../../packages/config
-      '@nodejs-doc/types':
+      '@nodejs-monorepo/types':
         specifier: workspace:*
         version: link:../../packages/types
       axios:
@@ -334,10 +334,10 @@ importers:
 
   apps/upload-image:
     dependencies:
-      '@nodejs-doc/config':
+      '@nodejs-monorepo/config':
         specifier: workspace:*
         version: link:../../packages/config
-      '@nodejs-doc/types':
+      '@nodejs-monorepo/types':
         specifier: workspace:*
         version: link:../../packages/types
       '@types/mysql':
