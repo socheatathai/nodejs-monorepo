@@ -1,0 +1,7 @@
+{
+  "name": "@nodejs-monorepo/tsconfig",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Shared TypeScript configurations for the workspace"
+}

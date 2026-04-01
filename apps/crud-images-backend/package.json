@@ -1,0 +1,30 @@
+{
+  "name": "@nodejs-monorepo/image-backend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "build": "node -c index.js",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint . --config ../../packages/eslint-config/base.cjs --ext .js,.jsx",
+    "clean": "rimraf build dist coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nodejs-monorepo/config": "workspace:*",
+    "@nodejs-monorepo/types": "workspace:*",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "mysql2": "^3.2.0",
+    "sequelize": "^6.31.0"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}

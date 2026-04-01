@@ -1,5 +1,8 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [
+    "**/.env.*local"
+  ],
   "tasks": {
     "dev": {
       "cache": false,
@@ -14,6 +17,11 @@
         "build/**",
         ".next/**",
         "!.next/cache/**"
+      ],
+      "inputs": [
+        "src/**/*.{js,jsx,ts,tsx}",
+        "package.json",
+        "tsconfig.json"
       ]
     },
     "test": {
@@ -22,9 +30,25 @@
       ],
       "outputs": [
         "coverage/**"
+      ],
+      "inputs": [
+        "src/**",
+        "__tests__/**",
+        "jest.config.js",
+        "package.json"
       ]
     },
     "lint": {
+      "outputs": [],
+      "inputs": [
+        "src/**",
+        "package.json"
+      ]
+    },
+    "type-check": {
+      "dependsOn": [
+        "^build"
+      ],
       "outputs": []
     },
     "clean": {

@@ -1,0 +1,31 @@
+{
+  "name": "@nodejs-monorepo/server-image",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "build": "node -c app.js",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint . --config ../../packages/eslint-config/base.cjs --ext .js,.jsx",
+    "clean": "rimraf build dist coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nodejs-monorepo/config": "workspace:*",
+    "@nodejs-monorepo/types": "workspace:*",
+    "axios": "^1.3.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.1.2",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
